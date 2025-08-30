@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Clock, Shield } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/hero-bg-expo.jpg";
 
 const HeroSection = () => {
   return (
@@ -14,8 +14,8 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 lg:px-8 text-center text-white">
-        <div className="max-w-4xl mx-auto animate-fade-in">
+      <div className="relative z-10 container mx-auto px-4 lg:px-8 text-white">
+        <div className="max-w-4xl animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Фотозоны, декорации и стенды{" "}
             <span className="text-primary">под ключ</span>
