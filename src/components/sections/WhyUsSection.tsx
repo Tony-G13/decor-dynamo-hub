@@ -1,30 +1,42 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Clock, Eye, DollarSign, Wrench } from "lucide-react";
+import { Award, Clock, Cog, Star, Users, Shield } from "lucide-react";
 
 const features = [
   {
-    icon: Clock,
-    title: "Смета за 24 часа",
-    description: "Получите детальный расчет стоимости в течение суток после обращения",
+    icon: Award,
+    title: "Аккредитация",
+    description: "Аккредитация на всех ведущих выставочных площадках Москвы",
     color: "text-primary"
   },
   {
-    icon: Eye,
-    title: "3D-визуализация бесплатно",
-    description: "Увидите результат до начала работ. Фотореалистичная визуализация входит в стоимость",
+    icon: Clock,
+    title: "Скорость работы",
+    description: "3D‑дизайн за 48 часов и быстрая визуализация этапов",
     color: "text-tertiary"
   },
   {
-    icon: DollarSign,
-    title: "Фиксированная цена в договоре",
-    description: "Цена не изменится в процессе работы. Все риски берем на себя",
+    icon: Cog,
+    title: "Полный цикл",
+    description: "Все в одном: проектирование, производство, логистика и монтаж",
     color: "text-secondary"
   },
   {
-    icon: Wrench,
-    title: "Монтаж в срок, 24/7",
-    description: "Работаем круглосуточно для соблюдения дедлайнов. Гарантия своевременной сдачи",
+    icon: Star,
+    title: "Собственное производство",
+    description: "Собственное производство без посредников",
     color: "text-primary"
+  },
+  {
+    icon: Users,
+    title: "Команда",
+    description: "Логистика и монтаж — команда 150+ человек",
+    color: "text-tertiary"
+  },
+  {
+    icon: Shield,
+    title: "Фиксированная смета",
+    description: "Фиксированная смета в договоре — никаких сюрпризов",
+    color: "text-secondary"
   }
 ];
 
@@ -39,7 +51,7 @@ const WhyUsSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <Card 
               key={feature.title}
