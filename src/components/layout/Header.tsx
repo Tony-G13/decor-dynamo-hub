@@ -8,8 +8,11 @@ const Header = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="text-2xl font-bold text-primary">
-            SET EXPO
+          <Link to="/" className="text-2xl font-bold text-primary flex items-center space-x-2">
+            <div className="w-8 h-8 bg-primary text-primary-foreground rounded flex items-center justify-center text-sm font-bold">
+              SE
+            </div>
+            <span>SET EXPO</span>
           </Link>
 
           {/* Desktop Navigation */}

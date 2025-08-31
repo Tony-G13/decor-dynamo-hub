@@ -9,6 +9,7 @@ import Decorations from "./pages/Decorations";
 import Props from "./pages/Props";
 import Stands from "./pages/Stands";
 import SetDesign from "./pages/SetDesign";
+import ExtendedService from "./pages/ExtendedService";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/props" element={<Props />} />
           <Route path="/stands" element={<Stands />} />
           <Route path="/set-design" element={<SetDesign />} />
+          <Route path="/extended-service" element={<ExtendedService />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

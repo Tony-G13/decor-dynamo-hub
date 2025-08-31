@@ -4,13 +4,15 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Slider } from "@/components/ui/slider";
-import { Calculator } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Calculator, Upload } from "lucide-react";
 
 const CalculatorSection = () => {
   const [area, setArea] = useState([25]);
   const [serviceType, setServiceType] = useState("");
   const [timeline, setTimeline] = useState("");
   const [estimate, setEstimate] = useState(0);
+  const [uploadedFile, setUploadedFile] = useState<File | null>(null);
 
   const calculateEstimate = () => {
     let basePrice = area[0] * 3000; // базовая цена за м²
@@ -107,6 +109,32 @@ const CalculatorSection = () => {
                       <SelectItem value="extended">Не горит (от 3 недель) -20%</SelectItem>
                     </SelectContent>
                   </Select>
+                </div>
+
+                {/* Загрузка проекта */}
+                <div className="space-y-4">
+                  <Label className="text-base font-medium">Загрузить проект (опционально)</Label>
+                  <div className="border-2 border-dashed border-muted-foreground/25 rounded-lg p-6 text-center hover:border-primary/50 transition-colors">
+                    <Upload className="h-8 w-8 mx-auto mb-2 text-muted-foreground" />
+                    <Input
+                      type="file"
+                      onChange={(e) => setUploadedFile(e.target.files?.[0] || null)}
+                      className="hidden"
+                      id="file-upload"
+                      accept=".pdf,.doc,.docx,.png,.jpg,.jpeg"
+                    />
+                    <Label htmlFor="file-upload" className="cursor-pointer">
+                      {uploadedFile ? (
+                        <span className="text-primary font-medium">{uploadedFile.name}</span>
+                      ) : (
+                        <>
+                          <span className="text-muted-foreground">Нажмите для выбора файла</span>
+                          <br />
+                          <span className="text-xs text-muted-foreground">PDF, DOC, изображения</span>
+                        </>
+                      )}
+                    </Label>
+                  </div>
                 </div>
 
                 {/* Результат */}

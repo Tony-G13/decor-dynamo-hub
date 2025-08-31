@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight, Camera, Palette, Shapes, Building, Film } from "lucide-react";
+import { ArrowRight, Camera, Palette, Shapes, Building, Film, Settings } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const services = [
@@ -43,6 +43,14 @@ const services = [
     price: "от 200 000 ₽",
     link: "/set-design",
     gradient: "from-secondary to-tertiary"
+  },
+  {
+    icon: Settings,
+    title: "Расширенный сервис",
+    description: "Аренда мебели, сопровождение на площадке, допуски",
+    price: "от 15 000 ₽",
+    link: "/extended-service",
+    gradient: "from-tertiary to-primary"
   }
 ];
 
