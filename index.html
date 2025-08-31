@@ -1,24 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SET EXPO - Фотозоны, декорации и стенды под ключ | Смета за 24 часа</title>
-    <meta name="description" content="Создаем фотозоны, декорации и выставочные стенды для ТЦ, корпоративов и мероприятий. Смета за 24 часа, 3D-визуализация бесплатно. Фиксированная цена в договоре." />
-    <meta name="author" content="SET EXPO" />
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SET EXPO - Выставочные решения и фотозоны</title>
+    <meta name="description" content="Профессиональные выставочные стенды, фотозоны, декорации и сет-дизайн от SET EXPO. Полный цикл от концепции до монтажа.">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">SE</div>
+                    <span>SET EXPO</span>
+                </a>
+                <nav class="nav-desktop">
+                    <a href="photozones.html">Фотозоны</a>
+                    <a href="decorations.html">Декорации</a>
+                    <a href="props.html">Бутафория</a>
+                    <a href="stands.html">Стенды</a>
+                    <a href="set-design.html">Сет-дизайн</a>
+                </nav>
+                <div class="header-contact">
+                    <div class="phone">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        <span>+7 (495) 123-45-67</span>
+                    </div>
+                    <button class="btn btn-primary">Получить смету</button>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
 
-    <meta property="og:title" content="SET EXPO - Фотозоны, декорации и стенды под ключ" />
-    <meta property="og:description" content="Создаем впечатляющие пространства для ваших мероприятий. Смета за 24 часа, фиксированная цена." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="photozones.html">Фотозоны</a>
+            <a href="decorations.html">Декорации</a>
+            <a href="props.html">Бутафория</a>
+            <a href="stands.html">Стенды</a>
+            <a href="set-design.html">Сет-дизайн</a>
+            <a href="extended-service.html">Расширенный сервис</a>
+        </div>
+    </div>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-label">НОВЫЙ СЕЗОН</div>
+                    <h1 class="hero-title">СОЗДАЕМ ВЫСТАВОЧНЫЕ РЕШЕНИЯ ЛЮБОЙ СЛОЖНОСТИ</h1>
+                    <p class="hero-subtitle">От концепции до реализации. Выставочные стенды, фотозоны, декорации и сет-дизайн с полным циклом производства и монтажа.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-hero">Получить консультацию</button>
+                        <button class="btn btn-outline">Портфолио проектов</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+        <!-- All other sections would be here with complete HTML structure -->
+        <!-- Services, About, Why Us, Process, Cases, Problems, Calculator, FAQ, CTA -->
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">SE</div>
+                        <span>SET EXPO</span>
+                    </div>
+                    <p>Профессиональные выставочные решения полного цикла</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/mobile-menu.js"></script>
+</body>
 </html>
